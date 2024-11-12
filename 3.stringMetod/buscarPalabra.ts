@@ -15,5 +15,5 @@ function isTextInPara(fullText: string, searchTerm: string): boolean {
   return fullText.toLowerCase().includes(searchTerm.toLowerCase());
 }
 let paragraphLower: string = paragraph.toLocaleLowerCase();
-let splits: string[] = paragraphLower.split("");
-console.log("cantidad de veces que aparece la palabra " + searchTerm + " es: " + splits.length);
+let splits: string[] = paragraphLower.split(searchTerm.toLocaleLowerCase());
+console.log("cantidad de veces que aparece la palabra " + searchTerm + " es: " + (splits.length - 1));
