@@ -10,6 +10,7 @@ for (let i: number = 0; i<arreglo.length; i++) {
         max = arreglo[i];
     }
 }
+
 console.log(max);
 if (esPar(max)) {
     console.log("el numbero es par");
